@@ -1,0 +1,19 @@
+u=int(input("enter the num: "))
+if(u<=50):
+    a=u*0.50
+    b=a*20/100+a
+    print(b)
+elif(u<=150):
+    a=50*0.50+(u-100)*0.75
+    b=a*20/100+a
+    print(b)
+elif(u<=250):
+    a=50*0.50+(100*0.75)+u-150*1.20
+    b=a*20/100+a
+    print(b)
+elif(u>250):
+    a=50*0.50+(100*0.75)+150*1.20+u-250*1.50
+    b=a*20/100+a
+    print(b)
+else:
+    print("invalid")
